@@ -10,10 +10,10 @@ router.get('/', function(req, res, next) {
   if(value == 0)
     value=Math.random()
   res.write("Computes the values for Math.abs, Math.acos(), Math.sin() and Math.sinh() function:"+"\n")
-  res.write('Math.abs() applied to '+value+" is "+Math.abs(value,value)+"\n");
+  res.write('Math.abs() applied to '+value+" is "+Math.abs(value)+"\n");
   res.write('Math.acos()  applied to '+value+" is "+Math.acos(value)+"\n");
   res.write('Math.sin() applied to '+value+" is "+Math.sin(value)+"\n");
-  res.end('Math.sinh() applied to '+value+" is "+Math.expm1(value));
+  res.end('Math.sinh() applied to '+value+" is "+Math.sinh(value));
 });
 
 module.exports = router;
